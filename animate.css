@@ -1,0 +1,27 @@
+/* Define the animation */
+@keyframes slide-down {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
+  /* Apply the animation to the button */
+  button#menuButton {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add the 'animate' class to the button when the menu is shown */
+  button#menuButton.animate {
+    transform: rotate(90deg);
+  }
+  
+  /* Apply the animation to the menu */
+  #mobile-menu-2 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Add the 'animate' class to the menu when it is shown */
+  #mobile-menu-2.animate {
+    transform: translateY(0);
+    animation: slide-down 0.3s ease-in-out;
+  }
+  
