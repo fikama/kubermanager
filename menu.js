@@ -6,16 +6,15 @@ var menuButton = document.getElementById("menuButton");
 // Define a function to toggle the menu visibility
 function toggleMenu() {
     // If the menu is hidden, show it and animate the button
-    if (menu.style.display === "none") {
+    if (menu.classList.contains("hidden")) {
     //   menu.style.display = "block";
       menu.classList.add("animate");
       menuButton.classList.add("animate");
-      menuButton.classList.remove("hidden");
+      menu.classList.remove("hidden");
     } else {
-      // Otherwise, hide it and remove the animation
-    //   menu.style.display = "none";
       menu.classList.remove("animate");
       menuButton.classList.remove("animate");
+      menu.classList.add("hidden");
     }
 }
 
