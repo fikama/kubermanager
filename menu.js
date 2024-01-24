@@ -8,10 +8,12 @@ function toggleMenu() {
     // If the menu is hidden, show it and animate the button
     if (menu.style.display === "none") {
       menu.style.display = "block";
+      menu.classList.add("animate");
       menuButton.classList.add("animate");
     } else {
       // Otherwise, hide it and remove the animation
       menu.style.display = "none";
+      menu.classList.remove("animate");
       menuButton.classList.remove("animate");
     }
 }
